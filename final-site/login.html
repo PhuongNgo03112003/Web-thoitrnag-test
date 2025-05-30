@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <script src="../js/login.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="login-form" class="form form-left">
+      <h2>Đăng nhập</h2>
+      <div id="login-error" class="error"></div>
+      <div class="form-group">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" required>
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required>
+      </div>
+      <button type="submit"><a href="../index.html">Đăng nhập</a></button>
+      <p>Bạn chưa có tài khoản? <a href="#" class="toggle-register">Tạo tài khoản mới</a></p>
+    </form>
+  
+    <form id="register-form" class="form form-right">
+      <h2>Đăng ký</h2>
+      <div id="register-error" class="error"></div>
+      <div class="form-group">
+        <label for="register-username">Username</label>
+        <input type="text" id="register-username" required>
+      </div>
+      <div class="form-group">
+        <label for="register-email">Email</label>
+        <input type="email" id="register-email" required>
+      </div>
+      <div class="form-group">
+        <label for="register-password">Password</label>
+        <input type="password" id="register-password" required>
+      </div>
+      <div class="form-group">
+        <label for="register-confirm-password">Xác nhận Password</label>
+        <input type="password" id="register-confirm-password" required>
+      </div>
+      <button type="submit">Đăng ký</button>
+      <p>Đã có tài khoản? <a href="#" class="toggle-login">Đăng nhập</a></p>
+    </form>
+  </div>
+
+  <script src="../js/login.js"></script>
+</body>
+</html>
