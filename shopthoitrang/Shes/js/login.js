@@ -22,8 +22,8 @@
       localStorage.setItem("loggedIn", true);
       localStorage.setItem("username", username);
 
-      // Chuyển hướng đến trang homepage.html
-      window.location.href = "../She's/Homepage.html";
+      // Chuyển hướng đến trang home.html
+      window.location.href = "../She's/home.html";
     } else {
       // Hiển thị thông báo lỗi đăng nhập
       var loginError = document.getElementById("login-error");
@@ -45,8 +45,8 @@
       localStorage.setItem("loggedIn", true);
       localStorage.setItem("username", username);
 
-      // Chuyển hướng đến trang homepage.html
-      window.location.href = "../She's/Homepage.html";
+      // Chuyển hướng đến trang home.html
+      window.location.href = "../She's/home.html";
     } else {
       // Hiển thị thông báo lỗi đăng ký
       var registerError = document.getElementById("register-error");
@@ -97,14 +97,14 @@
     return localStorage.getItem("username");
   }
 
-  // Kiểm tra xem người dùng đã đăng nhập chưa và chuyển hướng tới trang homepage.html
+  // Kiểm tra xem người dùng đã đăng nhập chưa và chuyển hướng tới trang home.html
   function redirectToHomepage() {
     if (checkLoggedIn()) {
-      window.location.href = "../She's/Homepage.html";
+      window.location.href = "../She's/home.html";
     }
   }
 
-  // Kiểm tra trạng thái đăng nhập và chuyển hướng tới trang homepage.html nếu đã đăng nhập
+  // Kiểm tra trạng thái đăng nhập và chuyển hướng tới trang home.html nếu đã đăng nhập
   redirectToHomepage();
 
  
